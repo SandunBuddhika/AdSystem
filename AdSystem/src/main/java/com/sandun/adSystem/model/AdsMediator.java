@@ -1,19 +1,17 @@
-package com.sandun.adSystem.model.model;
+package com.sandun.adSystem.model;
 
-import android.view.View;
 import android.widget.LinearLayout;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.facebook.ads.AdSettings;
-import com.facebook.ads.AudienceNetworkAds;
-import com.sandun.adSystem.model.AdsInitializer;
-import com.sandun.adSystem.model.adsModel.BannerAd;
 import com.sandun.adSystem.model.adsModel.InterstitialAd;
+import com.sandun.adSystem.model.handler.AdRequestHandler;
+import com.sandun.adSystem.AdsInitializer;
+import com.sandun.adSystem.model.adsModel.BannerAd;
 import com.sandun.adSystem.model.adsModel.NativeAd;
 import com.sandun.adSystem.model.adsModel.OpenAd;
 import com.sandun.adSystem.model.adsModel.RewardAd;
-import com.sandun.adSystem.model.handler.AdRequestHandler;
 import com.sandun.adSystem.model.handler.ViewAdRequestHandler;
 
 public class AdsMediator {

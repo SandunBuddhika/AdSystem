@@ -9,12 +9,12 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-import com.sandun.adssystem.model.AdsInitializer;
-import com.sandun.adssystem.model.model.AdMethodType;
-import com.sandun.adssystem.model.model.AdType;
-import com.sandun.adssystem.model.model.AdsMediator;
-import com.sandun.adssystem.model.model.handler.AdRequestHandler;
-import com.sandun.adssystem.model.model.handler.ViewAdRequestHandler;
+import com.sandun.adSystem.AdsInitializer;
+import com.sandun.adSystem.model.AdMethodType;
+import com.sandun.adSystem.model.AdType;
+import com.sandun.adSystem.model.AdsMediator;
+import com.sandun.adSystem.model.handler.AdRequestHandler;
+import com.sandun.adSystem.model.handler.ViewAdRequestHandler;
 
 public class MainActivity extends AppCompatActivity {
 

@@ -1,6 +1,5 @@
 package com.sandun.adSystem.model.adsModel;
 
-import android.view.View;
 import android.widget.LinearLayout;
 
 import com.sandun.adSystem.model.AdMethodType;

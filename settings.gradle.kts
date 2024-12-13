@@ -19,6 +19,7 @@ dependencyResolutionManagement {
     }
 }
 
+
 rootProject.name = "AdsImplementation"
 include(":app")
-include(":AdsSystem")
+include(":AdSystem")

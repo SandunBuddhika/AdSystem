@@ -1,4 +1,4 @@
-package com.sandun.adssystem.model.model.adsModel;
+package com.sandun.adSystem.model.adsModel;
 
 import androidx.annotation.NonNull;
 
@@ -9,12 +9,12 @@ import com.google.android.gms.ads.FullScreenContentCallback;
 import com.google.android.gms.ads.LoadAdError;
 import com.google.android.gms.ads.appopen.AppOpenAd;
 import com.google.android.gms.ads.rewarded.RewardedAd;
-import com.sandun.adssystem.model.model.AdMethodType;
-import com.sandun.adssystem.model.model.AdType;
-import com.sandun.adssystem.model.model.AdsMediator;
-import com.sandun.adssystem.model.model.ErrorHandler;
-import com.sandun.adssystem.model.model.exceptions.FailedToLoadAdException;
-import com.sandun.adssystem.model.model.handler.AdRequestHandler;
+import com.sandun.adSystem.model.AdMethodType;
+import com.sandun.adSystem.model.AdType;
+import com.sandun.adSystem.model.AdsMediator;
+import com.sandun.adSystem.model.ErrorHandler;
+import com.sandun.adSystem.model.exceptions.FailedToLoadAdException;
+import com.sandun.adSystem.model.handler.AdRequestHandler;
 
 import java.util.Map;
 

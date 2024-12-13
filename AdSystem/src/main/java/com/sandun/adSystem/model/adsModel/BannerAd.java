@@ -8,6 +8,7 @@ import com.sandun.adSystem.model.AdMethodType;
 import com.sandun.adSystem.model.AdType;
 import com.sandun.adSystem.model.AdsMediator;
 import com.sandun.adSystem.model.ErrorHandler;
+import com.sandun.adSystem.model.adsModel.ViewAdsCompact;
 import com.sandun.adSystem.model.exceptions.FailedToLoadAdException;
 import com.sandun.adSystem.model.handler.AdRequestHandler;
 

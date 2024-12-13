@@ -1,9 +1,4 @@
-package com.sandun.adSystem.model;
-
-import com.facebook.ads.AudienceNetworkAds;
-
-import java.util.HashMap;
-import java.util.Map;
+package com.sandun.adSystem;
 
 public class AdsInitializer {
 

@@ -1,4 +1,4 @@
-package com.sandun.adSystem.model.model;
+package com.sandun.adSystem.model;
 
 import com.sandun.adSystem.model.adsModel.AdsCompact;
 import com.sandun.adSystem.model.handler.AdRequestHandler;

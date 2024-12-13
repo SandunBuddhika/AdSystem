@@ -24,6 +24,8 @@ import com.sandun.adSystem.model.AdMethodType;
 import com.sandun.adSystem.model.AdType;
 import com.sandun.adSystem.model.AdsMediator;
 import com.sandun.adSystem.model.ErrorHandler;
+import com.sandun.adSystem.model.adsModel.NativeTemplateStyle;
+import com.sandun.adSystem.model.adsModel.TemplateView;
 import com.sandun.adSystem.model.exceptions.FailedToLoadAdException;
 import com.sandun.adSystem.model.handler.AdRequestHandler;
 import com.sandun.adSystem.model.handler.ViewAdRequestHandler;
