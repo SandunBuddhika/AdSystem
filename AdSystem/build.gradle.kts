@@ -28,6 +28,26 @@ android {
         targetCompatibility = JavaVersion.VERSION_11
     }
 }
+//publishing {
+//    publications {
+//        create("bar", MavenPublication::class.java) {
+//            groupId = "com.sandun"
+//            artifactId = "adsystem"
+//            version = "1.1"
+//            artifact("$buildDir/outputs/aar/AdSystem-release.aar")
+//        }
+//    }
+//    repositories {
+//        maven {
+//            name = "GitHubPackages"
+//            url = uri("https://maven.pkg.github.com/SandunBuddhika/AdsImplementation")
+//            credentials {
+//                username = System.getenv("GITHUB_USERNAME")
+//                password = System.getenv("GITHUB_TOKEN")
+//            }
+//        }
+//    }
+//}
 
 dependencies {
 
@@ -43,4 +63,15 @@ dependencies {
     implementation("com.google.android.gms:play-services-ads:23.5.0")
     implementation("androidx.annotation:annotation:1.0.0")
     implementation("com.facebook.android:audience-network-sdk:6.18.0")
+}
+
+afterEvaluate {
+    android.libraryVariants.forEach { variant ->
+        publishing.publications.create<MavenPublication>(variant.name) {
+            from(components.findByName(variant.name))
+            groupId = "com.sandun"
+            artifactId = "AdSystem"
+            version = "1.0.3"
+        }
+    }
 }
