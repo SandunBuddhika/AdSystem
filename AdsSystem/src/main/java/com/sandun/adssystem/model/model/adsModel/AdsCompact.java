@@ -10,7 +10,6 @@ import com.sandun.adssystem.model.model.exceptions.FailedToLoadAdException;
 import com.sandun.adssystem.model.model.handler.AdRequestHandler;
 
 import java.util.Map;
-import java.util.Objects;
 
 public abstract class AdsCompact {
     protected static final String TAG = AdsCompact.class.getName();

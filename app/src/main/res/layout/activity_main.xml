@@ -10,26 +10,53 @@
     <LinearLayout
         android:id="@+id/ads_container"
         android:layout_width="match_parent"
-        android:orientation="vertical"
         android:layout_height="match_parent"
+        android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" >
+        app:layout_constraintTop_toTopOf="parent">
+
         <Button
             android:id="@+id/interstitial_ad_btn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Show Interstitial Ad"/>
+            android:text="Show Interstitial Ad" />
+
         <Button
             android:id="@+id/reward_ad_btn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Show Reward Ad"/>
+            android:text="Show Reward Ad" />
+
         <Button
             android:id="@+id/open_ad_btn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Show Open Ad"/>
+            android:text="Show Open Ad" />
+
+        <Button
+            android:id="@+id/native_ad_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Show Native Ad" />
+
+        <LinearLayout
+            android:id="@+id/native_ad_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+
+        <Button
+            android:id="@+id/banner_ad_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Show banner Ad" />
+
+        <LinearLayout
+            android:id="@+id/banner_ad_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

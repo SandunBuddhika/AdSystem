@@ -1,7 +1,10 @@
 package com.sandun.adssystem.model.model.handler;
 
-public interface AdRequestHandler {
-    void onSuccess();
+import android.view.View;
 
-    void onError();
+public abstract class AdRequestHandler {
+    public abstract void onSuccess();
+
+    public abstract void onError();
+
 }

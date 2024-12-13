@@ -10,12 +10,11 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 import com.sandun.adssystem.model.AdsInitializer;
-import com.sandun.adssystem.model.ads.AdViewHandler;
-import com.sandun.adssystem.model.ads.AdsLoader;
 import com.sandun.adssystem.model.model.AdMethodType;
 import com.sandun.adssystem.model.model.AdType;
 import com.sandun.adssystem.model.model.AdsMediator;
 import com.sandun.adssystem.model.model.handler.AdRequestHandler;
+import com.sandun.adssystem.model.model.handler.ViewAdRequestHandler;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -35,12 +34,11 @@ public class MainActivity extends AppCompatActivity {
                 new AdsInitializer.FacebookIds("561288649843138", "561288649843138_561290069842996", "561288649843138_561289826509687", "561288649843138_561290649842938"),
                 new AdsInitializer.GoogleIds("ca-app-pub-3940256099942544~3347511713", "ca-app-pub-3940256099942544/1033173712", "ca-app-pub-3940256099942544/9214589741", "ca-app-pub-3940256099942544/9257395921", "ca-app-pub-3940256099942544/5224354917", "ca-app-pub-3940256099942544/2247696110"));
 
-
         AdsMediator mediator = AdsMediator.getInstance(this, initializer);
         mediator.setAdMethodType(AdMethodType.ADMOB);
-        mediator.preLoadAds(AdType.INTERSTITIAL);
-        mediator.preLoadAds(AdType.REWARD);
-        mediator.preLoadAds(AdType.OPEN);
+//        mediator.preLoadAds(AdType.INTERSTITIAL);
+//        mediator.preLoadAds(AdType.REWARD);
+//        mediator.preLoadAds(AdType.OPEN);
 
         findViewById(R.id.interstitial_ad_btn).setOnClickListener(v -> {
             mediator.showInterstitialAd(new AdRequestHandler() {
@@ -54,6 +52,7 @@ public class MainActivity extends AppCompatActivity {
                 public void onError() {
                     System.out.println("onError");
                 }
+
             });
         });
         findViewById(R.id.reward_ad_btn).setOnClickListener(v -> {
@@ -82,6 +81,40 @@ public class MainActivity extends AppCompatActivity {
                     System.out.println("onError");
                 }
             });
+        });
+        findViewById(R.id.native_ad_btn).setOnClickListener(v -> {
+            mediator.showNativeAd(new ViewAdRequestHandler() {
+                @Override
+                public void onSuccess() {
+                    System.out.println("onSuccess");
+                }
+
+                @Override
+                public void onError() {
+                    System.out.println("onError");
+                }
+
+                @Override
+                public void viewHandler(View adView) {
+                }
+            }, findViewById(R.id.native_ad_container));
+        });
+        findViewById(R.id.banner_ad_btn).setOnClickListener(v -> {
+            mediator.showBannerAd(new ViewAdRequestHandler() {
+                @Override
+                public void onSuccess() {
+                    System.out.println("onSuccess");
+                }
+
+                @Override
+                public void onError() {
+                    System.out.println("onError");
+                }
+
+                @Override
+                public void viewHandler(View adView) {
+                }
+            }, findViewById(R.id.banner_ad_container));
         });
     }
 }

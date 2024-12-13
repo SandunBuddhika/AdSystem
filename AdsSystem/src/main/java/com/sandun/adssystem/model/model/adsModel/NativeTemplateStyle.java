@@ -1,4 +1,4 @@
-package com.sandun.adssystem.model.ads.model;
+package com.sandun.adssystem.model.model.adsModel;
 
 import android.graphics.Typeface;
 import android.graphics.drawable.ColorDrawable;
